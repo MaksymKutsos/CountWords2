@@ -8,23 +8,23 @@ import java.util.Map;
 /**
  * Created by mkutsos on 07.10.2015.
  */
-public class CounterWords {
-    int i;
-    Map<String, Integer> map = new HashMap<String, Integer>();
+public class CountWords {
+    Map<String, Integer> countWords = new HashMap<String, Integer>();
 
-    public void count(List<String> listOfWords) {
+    public Map<String, Integer> count(List<String> listOfWords) {
         for (int n = 0; n < listOfWords.size(); n = 0) {
-            String st = listOfWords.get(n);
+            String word = listOfWords.get(n);
             Iterator<String> iter = listOfWords.iterator();
+            int replays = 0;
             while (iter.hasNext()) {
                 String str = iter.next();
-                if (st.equals(str)) {
-                    i++;
+                if (word.equals(str)) {
+                    replays++;
                     iter.remove();
                 }
             }
-            map.put(st, i);
-            i = 0;
+            countWords.put(word, replays);
         }
+        return countWords;
     }
 }

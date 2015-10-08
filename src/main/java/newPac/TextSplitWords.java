@@ -1,20 +1,20 @@
 package newPac;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by mkutsos on 07.10.2015.
  */
-public class FileSpliter {
+public class TextSplitWords {
     List<String> listOfWords;
+    public List<String>  split(String[] mas) {
 
-    public void split(String[] mas) {
-        StringSpliter stringSpliter = new StringSpliter();
+        StringSplitWords stringSpliter = new StringSplitWords();
+
         for (int i = 0; i < mas.length; i++) {
             stringSpliter.split(mas[i]);
         }
-        listOfWords = stringSpliter.listOfWords;
+       return stringSpliter.listOfWords;
     }
 
 }
