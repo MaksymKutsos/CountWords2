@@ -12,11 +12,11 @@ import java.util.List;
  */
 public class ReadTextFile {
     String[] linesAsArray;
+    String line;
+    List<String> lines = new ArrayList<String>();
 
     public void read(String s) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(s));
-        String line;
-        List<String> lines = new ArrayList<String>();
         while ((line = reader.readLine()) != null) {
             if (line.length() > 0) {
                 lines.add(line);

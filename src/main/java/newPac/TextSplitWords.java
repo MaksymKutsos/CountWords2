@@ -6,7 +6,6 @@ import java.util.List;
  * Created by mkutsos on 07.10.2015.
  */
 public class TextSplitWords {
-    List<String> listOfWords;
     public List<String>  split(String[] mas) {
 
         StringSplitWords stringSpliter = new StringSplitWords();

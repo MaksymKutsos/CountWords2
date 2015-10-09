@@ -7,7 +7,7 @@ import java.util.List;
  * Created by mkutsos on 07.10.2015.
  */
 public class StringSplitWords {
-    List<String> listOfWords = new ArrayList<String>();
+    List<String> listOfWords =new ArrayList<String>();
 
     public void split(String s) {
         String[] lines = s.split(" ");

@@ -18,8 +18,8 @@ public class SortWords {
             transposedCountWords.put(e.getValue(), e.getKey());
             uniqeWords.add(e.getValue());
         }
-        for (Integer i : uniqeWords) {
-            sortByPopularity.add(i);
+        for (Integer count : uniqeWords) {
+            sortByPopularity.add(count);
         }
         Collections.reverse(sortByPopularity);
         return transposedCountWords;
