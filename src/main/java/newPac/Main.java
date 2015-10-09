@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by sansiro on 03.10.2015.
+ * Created by mkutsos on 07.10.2015.
  */
 public class Main {
     static List<String> listOfWords;

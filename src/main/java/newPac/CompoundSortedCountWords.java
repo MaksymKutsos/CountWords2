@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by mkutsos on 09.10.2015.
+ * Created by mkutsos on 07.10.2015.
  */
 public class CompoundSortedCountWords {
     private List<String> sortedCountWords = new ArrayList<String>();
