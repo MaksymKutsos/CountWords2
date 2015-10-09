@@ -12,8 +12,8 @@ import java.util.List;
  */
 public class ReadTextFile {
     String[] linesAsArray;
-    String line;
-    List<String> lines = new ArrayList<String>();
+    private String line;
+    private List<String> lines = new ArrayList<String>();
 
     public void read(String s) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(s));
